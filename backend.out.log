@@ -1,0 +1,425 @@
+2026-04-07 11:25:30 - app.config - INFO - config.py:30 - 初始化 Elasticsearch: http://115.191.31.132:9200
+2026-04-07 11:25:30 - app.config - INFO - config.py:30 - 初始化 Elasticsearch: http://115.191.31.132:9200
+2026-04-07 11:25:31 - app.llm - INFO - qwen_sglang.py:10 - 初始化阿里百炼 LLM 客户端: https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-04-07 11:25:31 - app.llm - INFO - qwen_sglang.py:10 - 初始化阿里百炼 LLM 客户端: https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-04-07 11:25:32 - app.redis - INFO - cache.py:11 - 初始化 Redis 客户端: 115.191.31.132:6379
+2026-04-07 11:25:32 - app.redis - INFO - cache.py:11 - 初始化 Redis 客户端: 115.191.31.132:6379
+2026-04-07 11:25:33 - app - INFO - main.py:17 - FastAPI 应用启动
+INFO:     127.0.0.1:59751 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64277 - "GET /health HTTP/1.1" 200 OK
+2026-04-07 11:26:04 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=???java
+INFO:     127.0.0.1:49861 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:26:04 - app - INFO - main.py:34 - 收到聊天请求: query=???java, history长度=0
+2026-04-07 11:26:06 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:26:06 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:26:07 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:26:07 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:26:07 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：???java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:26:07 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：???java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 ???java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 ???java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=0
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 ???java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 ???java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=0
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:26:08 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '???java'
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '???java'
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['???java']
+2026-04-07 11:26:08 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['???java']
+2026-04-07 11:26:08 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=???java
+2026-04-07 11:26:08 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=???java
+2026-04-07 11:26:08 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:26:08 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:26:10 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:26:10 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:26:10 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:26:10 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:26:10 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:26:10 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:26:10 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=???java, documents数量=10, top_n=5
+2026-04-07 11:26:10 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=???java, documents数量=10, top_n=5
+2026-04-07 11:26:11 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:26:11 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:26:11 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=???java, chunks数量=5
+2026-04-07 11:26:11 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=???java, chunks数量=5
+2026-04-07 11:26:13 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:26:13 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:26:13 - app.redis - INFO - cache.py:48 - 缓存写入成功: ???java..., 答案长度: 274
+2026-04-07 11:26:13 - app.redis - INFO - cache.py:48 - 缓存写入成功: ???java..., 答案长度: 274
+2026-04-07 11:27:09 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=什么是Java
+INFO:     127.0.0.1:56711 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:27:09 - app - INFO - main.py:34 - 收到聊天请求: query=什么是Java, history长度=0
+2026-04-07 11:27:11 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:27:11 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:27:12 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:27:12 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：什么是Java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：什么是Java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 什么是Java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 什么是Java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=0
+2026-04-07 11:27:12 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 什么是Java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 什么是Java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=0
+2026-04-07 11:27:13 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:27:13 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '什么是Java'
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '什么是Java'
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['什么是Java']
+2026-04-07 11:27:13 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['什么是Java']
+2026-04-07 11:27:13 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=什么是Java
+2026-04-07 11:27:13 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=什么是Java
+2026-04-07 11:27:13 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:27:13 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:27:14 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:27:14 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:27:14 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:27:14 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:27:14 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:27:14 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:27:14 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=什么是Java, documents数量=10, top_n=5
+2026-04-07 11:27:14 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=什么是Java, documents数量=10, top_n=5
+2026-04-07 11:27:15 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:27:15 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:27:15 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=什么是Java, chunks数量=5
+2026-04-07 11:27:15 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=什么是Java, chunks数量=5
+2026-04-07 11:27:19 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:27:19 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:27:19 - app.redis - INFO - cache.py:48 - 缓存写入成功: 什么是Java..., 答案长度: 471
+2026-04-07 11:27:19 - app.redis - INFO - cache.py:48 - 缓存写入成功: 什么是Java..., 答案长度: 471
+2026-04-07 11:32:57 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=这些信息来自哪里
+INFO:     127.0.0.1:57136 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:32:57 - app - INFO - main.py:34 - 收到聊天请求: query=这些信息来自哪里, history长度=2
+2026-04-07 11:33:01 - app.embedding - ERROR - embedding.py:39 - 获取 embedding 失败: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-04-07 11:33:01 - app.embedding - ERROR - embedding.py:39 - 获取 embedding 失败: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-04-07 11:33:01 - app - ERROR - main.py:40 - SSE 流式响应异常: HTTPSConnectionPool(host='dashscope.aliyuncs.com', port=443): Max retries exceeded with url: /api/v1/services/embeddings/text-embedding/text-embedding (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2026-04-07 11:34:48 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=这些信息来自哪里
+INFO:     127.0.0.1:53210 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:34:48 - app - INFO - main.py:34 - 收到聊天请求: query=这些信息来自哪里, history长度=2
+2026-04-07 11:35:02 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:02 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:02 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:02 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：这些信息来自哪里
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：这些信息来自哪里
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 5
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 5
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=这些信息来自哪里, chunks数量=0
+2026-04-07 11:35:02 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=这些信息来自哪里, chunks数量=0
+2026-04-07 11:35:08 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:35:08 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:35:08 - app.redis - INFO - cache.py:48 - 缓存写入成功: 这些信息来自哪里..., 答案长度: 921
+2026-04-07 11:35:08 - app.redis - INFO - cache.py:48 - 缓存写入成功: 这些信息来自哪里..., 答案长度: 921
+2026-04-07 11:35:11 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=这些信息来自哪里
+INFO:     127.0.0.1:56005 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:35:11 - app - INFO - main.py:34 - 收到聊天请求: query=这些信息来自哪里, history长度=0
+2026-04-07 11:35:37 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=什么是java
+INFO:     127.0.0.1:63144 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:35:37 - app - INFO - main.py:34 - 收到聊天请求: query=什么是java, history长度=2
+2026-04-07 11:35:39 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:39 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:39 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:39 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:39 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：什么是java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:39 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：什么是java
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 什么是java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 什么是java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=2
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=你是一个智能助手，负责分析用户查询 什么是java，并从以下四种检索增强策略中选择一个最适合的策略，直接返回策略名称，不需要解释过程。
+1. 直接检索：适用于查询意图明确，需要从知识库中检索特定信息的问题。
+2. 假设问题检索：适用于查询较为抽象，直接检索效果不佳的问题。
+3. 子查询检索：将复杂的用户查询拆分为多个简单的子查询，最多生成3个。适用于涉及多个实体的问题。
+4. 回溯问题检索：将复杂查询转化为更基础、易于检索的问题。
+根据用户查询 什么是java，直接返回最适合的策略名称，例如 "直接检索"。不要输出任何分析过程或其他内容。, chunks数量=0, history长度=2
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:35:40 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 4
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '什么是java'
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:55 - 原始问题: '什么是java'
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:56 - 命中策略: '直接检索'
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['什么是java']
+2026-04-07 11:35:40 - app.rag_engine - INFO - rag_engine_qurey.py:57 - 改写结果: ['什么是java']
+2026-04-07 11:35:40 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=什么是java
+2026-04-07 11:35:40 - app.retriever - INFO - retriever.py:40 - 混合检索开始: query=什么是java
+2026-04-07 11:35:40 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:35:40 - app.retriever - INFO - retriever.py:17 - 关键词检索完成，返回 5 条结果
+2026-04-07 11:35:41 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:41 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:41 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:35:41 - app.retriever - INFO - retriever.py:36 - 向量检索完成，返回 5 条结果
+2026-04-07 11:35:41 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:35:41 - app.retriever - INFO - retriever.py:52 - 混合检索完成，返回 10 条去重结果
+2026-04-07 11:35:41 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=什么是java, documents数量=10, top_n=5
+2026-04-07 11:35:41 - app.reranker - INFO - try_reraken.py:17 - Rerank 请求: query=什么是java, documents数量=10, top_n=5
+2026-04-07 11:35:42 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:35:42 - app.reranker - INFO - try_reraken.py:45 - Rerank 完成，返回 5 条结果
+2026-04-07 11:35:42 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=什么是java, chunks数量=5
+2026-04-07 11:35:42 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=什么是java, chunks数量=5
+2026-04-07 11:35:49 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:35:49 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:35:49 - app.redis - INFO - cache.py:48 - 缓存写入成功: 什么是java..., 答案长度: 1097
+2026-04-07 11:35:49 - app.redis - INFO - cache.py:48 - 缓存写入成功: 什么是java..., 答案长度: 1097
+2026-04-07 11:35:53 - app - INFO - main.py:46 - API 调用: /api/chat/stream, query=你的参考文档
+INFO:     127.0.0.1:64627 - "POST /api/chat/stream HTTP/1.1" 200 OK
+2026-04-07 11:35:53 - app - INFO - main.py:34 - 收到聊天请求: query=你的参考文档, history长度=4
+2026-04-07 11:35:54 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:54 - app.embedding - INFO - embedding.py:36 - 成功获取 embedding，向量维度: 1024
+2026-04-07 11:35:54 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:54 - app.milvus - INFO - faq_index.py:91 - FAQ 检索完成，返回 1 条结果
+2026-04-07 11:35:54 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：你的参考文档
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:54 - app.llm - INFO - qwen_sglang.py:34 - LLM 生成请求: query=
+你是一个意图识别助手。请判断用户的最新问题是否需要检索【计算机科学、软件工程、编程、IT技术】相关的专业知识库。
+
+规则：
+- 如果需要检索专业知识，只能输出 "true"
+- 如果是闲聊、打招呼、通用常识，只能输出 "false"
+- 绝对不要输出任何其他解释或标点符号！
+
+例子：
+用户：Python里怎么实现多线程？
+助手：true
+
+用户：今天天气真不错啊。
+助手：false
+
+用户：帮我写一段冒泡排序的代码。
+助手：true
+
+用户：你能帮我做什么？
+助手：false
+
+用户的最新问题：你的参考文档
+助手：, chunks数量=0, history长度=0
+2026-04-07 11:35:55 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 5
+2026-04-07 11:35:55 - app.llm - INFO - qwen_sglang.py:55 - LLM 生成完成，回复长度: 5
+2026-04-07 11:35:55 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=你的参考文档, chunks数量=0
+2026-04-07 11:35:55 - app.llm - INFO - qwen_sglang_stream.py:32 - LLM 流式生成请求: query=你的参考文档, chunks数量=0
+2026-04-07 11:36:07 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:36:07 - app.llm - INFO - qwen_sglang_stream.py:54 - LLM 流式生成完成
+2026-04-07 11:36:07 - app.redis - INFO - cache.py:48 - 缓存写入成功: 你的参考文档..., 答案长度: 2426
+2026-04-07 11:36:07 - app.redis - INFO - cache.py:48 - 缓存写入成功: 你的参考文档..., 答案长度: 2426

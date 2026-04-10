@@ -1,0 +1,7 @@
+2026-04-07 11:17:51 - app.config - INFO - config.py:16 - 初始化 Elasticsearch: 115.191.31.132:9200
+2026-04-07 11:17:51 - app.config - INFO - config.py:16 - 初始化 Elasticsearch: 115.191.31.132:9200
+2026-04-07 11:17:52 - app.llm - INFO - qwen_sglang.py:10 - 初始化阿里百炼 LLM 客户端: https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-04-07 11:17:52 - app.llm - INFO - qwen_sglang.py:10 - 初始化阿里百炼 LLM 客户端: https://dashscope.aliyuncs.com/compatible-mode/v1
+2026-04-07 11:17:52 - app.redis - INFO - cache.py:11 - 初始化 Redis 客户端: 115.191.31.132:6379
+2026-04-07 11:17:52 - app.redis - INFO - cache.py:11 - 初始化 Redis 客户端: 115.191.31.132:6379
+2026-04-07 11:17:53 - app - INFO - main.py:17 - FastAPI 应用启动

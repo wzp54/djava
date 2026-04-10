@@ -1,0 +1,120 @@
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x000001813014B440>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x0000018130174D60>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x0000018130196740>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x0000018130175D20>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x0000018130194340>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x0000018130196B40>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x0000018130177680>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x00000181301D4AC0>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x000001813014B940>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x0000018130176EA0>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in
+Exception ignored in: <async_generator object HTTP11ConnectionByteStream.__aiter__ at 0x000001812FECA940>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\connection_pool.py", line 404, in __aiter__
+    yield part
+RuntimeError: async generator ignored GeneratorExit
+Exception ignored in: <coroutine object HTTP11ConnectionByteStream.aclose at 0x000001812FFD9540>
+Traceback (most recent call last):
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 348, in aclose
+    await self._connection._response_closed()
+  File "F:\anaconda3\Lib\site-packages\httpcore\_async\http11.py", line 239, in _response_closed
+    async with self._state_lock:
+  File "F:\anaconda3\Lib\site-packages\httpcore\_synchronization.py", line 77, in __aenter__
+    await self._anyio_lock.acquire()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 1814, in acquire
+    await AsyncIOBackend.cancel_shielded_checkpoint()
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 2381, in cancel_shielded_checkpoint
+    with CancelScope(shield=True):
+  File "C:\Users\86188\AppData\Roaming\Python\Python312\site-packages\anyio\_backends\_asyncio.py", line 461, in __exit__
+    raise RuntimeError(
+RuntimeError: Attempted to exit cancel scope in a different task than it was entered in

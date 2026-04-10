@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.pyc
+__pycache__
+
+# 环境文件
+.env.local
+.env.*.local
+
+# 测试
+*.test.py
+tests/
+test/
+
+# 文档
+README.md
+*.md
+
+# Node/前端相关（如果后端不需要）
+node_modules/
+frontend/node_modules/
+
+# 其他
+*.log
+.DS_Store

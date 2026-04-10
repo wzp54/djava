@@ -1,0 +1,13 @@
+2026-04-07 11:21:23 - INFO - chainlit - Your app is available at http://0.0.0.0:8001
+2026-04-07 11:22:09 - WARNING - chainlit - Translated markdown file for zh-CN not found. Defaulting to chainlit.md.
+2026-04-07 11:22:09 - INFO - chainlit - Missing custom logo. Falling back to default logo.
+2026-04-07 11:22:16 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:22:28 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:26:57 - WARNING - chainlit - Translated markdown file for zh-CN not found. Defaulting to chainlit.md.
+2026-04-07 11:27:09 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:32:57 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:34:48 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:35:03 - WARNING - chainlit - Translated markdown file for zh-CN not found. Defaulting to chainlit.md.
+2026-04-07 11:35:11 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:35:37 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
+2026-04-07 11:35:53 - INFO - httpx - HTTP Request: POST http://127.0.0.1:8000/api/chat/stream "HTTP/1.1 200 OK"
